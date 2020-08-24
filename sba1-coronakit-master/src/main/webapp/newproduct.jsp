@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Corona Kit-Add New Product(Admin)</title>
+</head>
+<body>
+<jsp:include page="header.jsp"/>
+<hr/>
+
+<form action="admin?action=insertproduct" method="post">
+	<div>
+		<div><label>Product name</label> <input type="text" name="name"></div>
+		<br/>
+		<div><label>Product Cost</label> <input type="number" name="cost"></div>
+		<br/>
+		<div><label>Product Description</label> <input type="text" name="desc"></div>
+		<div> <input type="submit" value="Add"> </div>
+	</div>
+</form>
+
+<hr/>	
+	<jsp:include page="footer.jsp"/>
+</body>
+</html>
